@@ -1,0 +1,18 @@
+{
+  "name": "tcbapi",
+  "version": "0.1.1",
+  "description": "同城帮API",
+  "main": "service.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node service.js"
+  },
+  "keywords": [
+    "tcb"
+  ],
+  "author": "JunLDai",
+  "license": "ISC"
+}

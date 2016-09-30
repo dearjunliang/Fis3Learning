@@ -1,0 +1,356 @@
+*{
+	margin:0;
+	padding:0;
+	
+	
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+/*top-start*/
+	#top{
+		width:100%;
+		height:32px;
+		border-bottom:1px solid #c7c7c7;
+		background:url("../images/index/top-bg.png") repeat;
+	}
+	#top_container{
+		width:1200px;
+		margin:0 auto;
+		font-size: 0px;
+	}
+	#top_container a{
+		color: #666;
+	}
+	#top_info_left{
+		width:196px;
+		height:32px;
+		line-height: 32px;
+		float:left;
+		
+	}
+	#top_city_choose{
+		display: inline-block;
+		font-size: 12px;
+		color:#666;
+	}
+	#city{
+		color:#185;
+		font-size: 14px;
+	}
+	#change_btn{
+		padding:0 10px;
+		border-right:1px solid #c7c7c7;
+		cursor: pointer;
+	}
+	#change_btn:hover{
+		text-decoration: underline;
+	}
+	#index_link{
+		display: inline-block;
+		margin-left: 10px;
+		font-size: 12px;
+		cursor: pointer;
+	}
+	#index_link:hover{
+		text-decoration: underline;
+	}
+
+	#top_info_right{
+		width:525px;
+		height:32px;
+		line-height: 32px;
+		float:right;
+
+	}
+	#top_info_right ul li{
+		height:32px;
+		float:left;
+		text-align: center;
+		line-height: 32px;
+		font-size: 12px;
+		margin-left: -2px;
+
+	}
+	#top_info_right ul li a{
+		padding: 0 12px 0 12px;
+		border-right: 1px solid #c7c7c7;
+
+	}
+
+	#top_info_right ul li:last-child a{
+		border-right: none;
+	}
+/*top end*/
+
+
+#header{
+	width:100%;
+	height:392px;
+	background:url("../images/shoujiweixiu/header-1.jpg") no-repeat center;
+	transition: background-image 0.4s;
+}
+#content{
+	width:100%;
+	height:220px;
+	margin-top: 30px;
+	text-align: center;
+}
+#content h2{
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+#error_box{
+	width:1200px;
+	margin:0 auto;
+}
+.error_li{
+	float:left;
+	width:133px;
+	height:163px;
+	position: relative;
+}
+.error_li img{
+	width:68px;
+	height:68px;
+}
+.error_li span{
+	display: block;
+	width:133px;
+	height:50px;
+	padding-top: 16px;
+	padding-bottom: 5px;
+	color:#666;
+	font-size: 18px;
+}
+.error_li:after{
+	content:"";
+	display: none;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translate(-50%);
+	width:43px;
+	height:21px;
+	background:url("../images/shoujiweixiu/arrow_icon.jpg") no-repeat center;
+}
+.error_li:hover:after{
+	display: block;
+}
+
+
+#post_box{
+	width:100%;
+	height:429px;
+	background:#F6F6F6;
+}
+
+#post_content{
+	width:1200px;
+	margin:0 auto;
+}
+#error_detail{
+	width:1200px;
+	/*height:66px;*/
+	/*padding:40px 0;*/
+}
+.error_detail_li{
+	width:1200px;
+	height:146px;
+	display: none;
+}
+.error_detail_li a{
+	display: block;
+	width:218px;
+	height:48px;
+	margin:8px;
+	border:1px solid #E0E0E0;
+	font-size: 16px;
+	line-height: 48px;
+	text-align: center;
+	float:left;
+	border-radius: 6px;
+	background:white;
+}
+.error_detail_li a:hover{
+	border:1px solid #20AAED;
+}
+#post_nav{
+	width:1100px;
+	margin:0 auto;
+	position: relative;
+}
+#post_nav_container{
+	width:1200px;
+}
+#post_nav_container h2{
+	height:45px;
+	line-height: 45px;
+	font-size: 30px;
+	color:#000;
+	text-align: center;
+	padding:30px 0;
+	font-weight: normal;
+}
+#post_nav_box{
+	float:left;
+	width:940px;
+	height:275px;
+	overflow: hidden;
+	position: relative;
+}
+#post_nav_ul{
+	position: absolute;
+	left:0;
+	transition: left 0.4s;
+	width:5000px;
+}
+.post_nav_li{
+	width:235px;
+	height:275px;
+	float: left;
+}
+
+#nav_pre,#nav_next{
+	display: block;
+	float:left;
+	width:80px;
+	height: 275px;
+	background:#F6F6F6;
+	line-height: 275px;
+	text-align: center;
+	font-size:48px;
+	color:#ccc;
+	font-family: "å®‹ä½“";
+}
+#nav_pre:hover,#nav_next:hover{
+	background:white;
+}
+.post_nav_li{
+	position: relative;
+}
+.post_nav_li img{
+	box-shadow: 0 0 15px #333;
+	margin-left: 15px;
+}
+
+
+#advantage_box{
+	width:100%;
+	height:218px;
+}
+
+#advantage_container{
+	width:1200px;
+	height:218px;
+	margin:0 auto;
+}
+
+#team_box{
+	width:100%;
+	height:392px;
+	background:#08A1EB;
+}
+#team_container{
+	width:1200px;
+	margin:0 auto;
+	height:392px;
+}
+
+
+
+#footer{
+	background:#FAFAFA;
+	width:100%;
+}
+#footer_nav{
+	width:980px;
+	height:114px;
+	padding:20px 0;
+	margin:0 auto;
+}
+
+#footer_nav ul li{
+	float:left;
+	width:196px;
+	height:114px;
+}
+#footer_nav ul li span{
+	width:43px;
+	height:43px;
+	display: inline-block;
+	background:url("../images/shoujiweixiu/footer.png");
+	vertical-align: top;
+}
+#footer_nav ul li:nth-child(1) span{
+	background-position: 0 0;
+}
+#footer_nav ul li:nth-child(2) span{
+	background-position: 0 -43px;
+}
+#footer_nav ul li:nth-child(3) span{
+	background-position: 0 -86px;
+}
+#footer_nav ul li:nth-child(4) span{
+	background-position: 0 -129px;
+}
+#footer_nav ul li:nth-child(5) span{
+	background-position: 0 -172px;
+}
+.footer_nav_item{
+	display: inline-block;
+	color:#888;
+}
+.footer_nav_item dt{
+	font-size: 16px;
+	font-weight: bold;
+	height:36px;
+	line-height: 36px;
+	color:#fff;
+}
+.footer_nav_item dd a{
+	height:26px;
+	line-height: 26px;
+	font-size: 12px;
+	color:#fff;
+}
+.footer_nav_item dd a:hover{
+	text-decoration: underline;
+}
+#footer_copyright{
+	padding-top: 22px;
+	padding-bottom: 50px;
+}
+#footer_copyright p{
+	text-align: center;
+	height:24px;
+	line-height: 24px;
+	color:#fff;
+	font-size: 12px;
+}
+#footer_copyright p a{
+	color:#fff;
+}
+#footer_copyright p a:hover{
+	text-decoration: underline;
+}
+
+
+#footer_nav_container{
+	width:100%;
+	background:#494E51;
+}
+
+#footer_copyright_container{
+	width:100%;
+	background:#242C31;
+}

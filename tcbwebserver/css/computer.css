@@ -1,0 +1,709 @@
+*
+{
+	padding: 0px;
+	margin:0px auto;
+}
+a
+{
+	text-decoration: none;
+}
+.top-banner
+{
+	width: 100%;
+	height: 420px;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+.top-item
+{
+	width: ;
+	height: 420px;
+	background: url(../images/computer/computer1.jpg) no-repeat center 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	right: 0;
+}
+.item-inner
+{
+	width: 1200px;
+	height: 420px;
+	margin:0 auto;
+	background: url(../images/computer/computer1.jpg) no-repeat center 0;
+}
+.fault-list
+{
+	display: block;
+	margin-bottom: 40px;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.fault-list::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fault-list-inner
+{
+	width: 1200px;
+	margin:0 auto;
+	display: block;
+	// clear: both;
+	// zoom:1;
+}
+.fault-list1-inner a:hover
+{
+	border:1px solid #39f;
+}
+.fault1
+{
+	width: 16.6%;
+	// display: inline-block;
+	float: left;
+	text-align: center;
+	color: #333;
+}
+.icon1,.icon2,.icon3,.icon4,.icon5,.icon6
+{
+	width: 68px;
+	height: 68px;
+	background: url(../images/computer/cp2.png)no-repeat;
+	display: inline-block;
+}
+.icon1
+{
+	background-position: 7px -11px;
+}
+.icon1:hover
+{
+	background-position: 7px -125px;
+}
+.icon2
+{
+	background-position: -169px -11px;
+}
+.icon2:hover
+{
+	background-position: -169px -125px;
+}
+.icon3
+{
+	background-position: -732px -11px;
+}
+.icon3:hover
+{
+	background-position: -732px -125px;
+}
+.icon4
+{
+	background-position: -361px -11px;
+}
+.icon4:hover
+{
+	background-position: -361px -125px;
+}
+.icon5
+{
+	background-position: -552px -11px;
+}
+.icon5:hover
+{
+	background-position: -552px -125px;
+}
+.icon6
+{
+	background-position: -933px -11px;
+}
+.icon6:hover
+{
+	background-position: -933px -125px;
+}
+.fault1:hover
+{
+	color: #20AAED;
+}
+.fault-list1
+{
+	background: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	margin-bottom: 20px;
+	clear: both;
+}
+.fault-list1-inner
+{
+	width: 1200px;
+	margin:0 auto;
+	font-size: 0;
+	padding: 25px 0;
+}
+.blocks
+{
+	width: 222px;
+	height:40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
+	// display: block;
+	display: inline-block;
+	border:1px solid #e0e0e0;
+	border-radius:6px;
+	// float: left;
+	margin: 8px;
+	text-align: center;
+}
+.shops, .shops1, .shops2, .shops3, .shops4{
+	background-image: url("../images/computer/footer.png");
+}
+.shops{
+	background-position: 0 0;
+}
+.shops1{
+	background-position: 0 -43px;
+}
+.shops2{
+	background-position: 0 -86px;
+}
+.shops3{
+	background-position: 0 -129px;
+}
+.shops4{
+	background-position: 0 -172px;
+}
+
+
+
+
+
+/*头部公用css*/
+#topbar{
+	width: 1368px;
+	height: 30px;
+	box-sizing: content-box;
+	border:1px #c7c7c7 solid;
+	background: #f6f6f6; 
+}
+.topbarleft{
+	float: left;
+	margin-left: 84px;
+}
+/*城市块*/
+.citycnt{
+	position: absolute;
+	width: 458px;
+	height:168px;
+	padding-top: 7px;
+	z-index: 999;
+	background: #FBFBFB;
+	left: 135px;
+	display: none;
+}
+.cityhead{
+	width: 435px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 30px
+}
+.cityhead b{
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	float: left;
+	font-weight: thin;
+}
+.cityhead span{
+	display: inline-block;
+	float: right;
+	width: 40px;
+	height: 18px;
+	font-size: 13px;
+	line-height: 20px;
+	border:1px solid gray;
+	cursor: pointer;
+	background: #F4F4F5;
+	color: #6D6D6D;
+}
+.hotcities,.citylist{
+	width: 410px;
+	height: 40px;
+	background: white;
+	border:1px #d5d5d5 solid;
+}
+.hotcities{
+	border-bottom: none;
+}
+.citylist{
+	height: 60px;
+
+	border-top: none;
+}
+.hotcities>b,.citylist>b{
+	display: inline-block;
+	padding:0;
+	width: 40px;
+	height: 40px;
+	line-height: 20px;
+	float: left;
+	color: gray
+}
+.hotcities a,.citylist a{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	color:black;
+	text-align: center;
+}
+.hotcities a:hover,.citylist a:hover{
+	color:#FE6600;
+	text-decoration: underline;
+}
+.filterlet{
+	float: left;
+	width: 370px;
+}
+
+.filterlet a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+.data-letter{
+	margin-left: 40px;
+}
+
+
+.topbarright{
+	float: right;
+	margin-right: 84px;
+}
+.topbarright,.topbarleft{
+	font-size: 13px;
+	padding-top: 9px;
+}
+.heada{
+	color: gray;
+	display: inline-block;
+	padding:0 10px;
+	border-right: 1px #d2d2d2 solid;
+}
+.heada:hover{
+	text-decoration: underline;
+}
+
+/*底部公用CSS*/
+
+.bottomcontent{
+	width: 1200px;
+	height: 900px;
+	background: white;
+	margin-left: 74.5px;
+	margin-right: 74.5px;
+}
+.btmcntleft{
+	width: 890px;
+	height: 844px;
+	float: left;
+
+}
+.btmheadleft,.btmheadcenter{
+	float: left;
+	width: 120px;
+	height: 32px;
+	padding: 4px 7px 4px 13px;
+	margin-right: 8px;
+	border: 1px #67BB03 solid;
+	font-size: 15px;
+	line-height: 32px;
+}
+
+.btmheadright{
+	float: left;
+	width: 590px;
+	height: 32px;
+}
+
+.btmhead{
+	width: 1200px;
+	height: 42px;
+	float: left;
+}
+.btmheadright input{
+	width: 465px;
+	height: 40px;
+	border: 1px #67BB03 solid;
+	float: left;
+}
+.btmheadright button{
+	float: left;
+	width: 120px;
+	height: 42px;
+	border: 1px #67BB03 solid;
+	background: #118855;
+	color: white;
+	font-size: 21px;
+	cursor: pointer;
+}
+/*商店菜单*/
+.btmmenu{
+	float: left;
+	width: 890px;
+	height: 40px;
+	margin-top: 20px;
+	border: 1px gray solid;
+	background: #F7F7F7;
+}
+.btmmenu ul{
+	width: 625px;
+	float: left;
+}
+.btmmenu li{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	border-right: 1px gray solid;
+	text-align: center;
+	color: #666666;
+	font-size: 14px;
+	line-height: 40px;
+}
+/*地图按钮*/
+.map{
+	width: 103px;
+	height: 28px;
+	float: right;
+	margin:6px 10px 0 0;
+	border: 1px gray solid;
+	color: #66667D;
+	line-height: 28px;
+	font-size: 13px;
+	background: white;
+}
+.map span{
+	display: inline-block;
+	width: 100px;
+	height: 28px;
+	text-indent: 30px;
+	background: url(../images/mapmark.png) no-repeat 10px 0;
+}
+/*商店列表*/
+.shoplist{
+	width: 890px;
+	height:680px;
+	float: left;
+	background: white;
+}
+.listitem{
+	width: 890px;
+	height: 92px;
+	padding: 20px 0;
+	border-top: 1px #DFDFE1 solid;
+	float: left;
+}
+.shopsell,.shopad,.shoplve{
+	font-size: 13px;
+	color: gray;
+}
+.shopsell,.shopad{
+	display: inline-block;
+	width: 380px;
+	height: 20px;
+	overflow: hidden;
+	line-height: 20px;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.itempic{
+	width:90px;
+	height: 90px;
+	margin-right: 10px;
+		float: left;
+}
+.itempic img{
+	width:90px;
+	height: 90px;
+}
+.itemcnt{
+	width: 786px;
+	height: 99px;
+	float: left;
+}
+.listitem:hover{
+	background: #FAFAFA;
+}
+.itemcntleft{
+	width: 390px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	line-height: 30px;
+}
+.itemcntleft a{
+	font-size: 15px;
+	color: #118855;
+	margin-right: 10px;
+}
+.itemcntcenter span{
+	font-size: 14px;
+	color: gray;
+}
+.redheart{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/span.png) no-repeat 0 -18px;
+}
+.itemcntcenter{
+	width: 160px;
+	height: 90px;
+	float: left;
+	margin-left: 50px;
+}
+.itemcntcenter p{
+	height: 30px;
+}
+.itemcntcenter a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 30px;
+	position: relative;
+	top: 7px;
+}
+.itemcntright{
+	width: 150px;
+	height: 65px;
+	padding-top:25px;
+	float: left;
+	margin-left: 35px;
+	display: none;
+}
+.itemcntright button{
+	width: 140px;
+	height: 40px;
+	border: none;
+	border: 1px #118855 solid;
+	color: #118855;
+	background: white;
+}
+/* 分页按钮*/ 
+.mappages,.pages{
+	width: 800px;
+	height: 44px;
+	position: relative;
+	padding-left: 90px;
+	padding-top: 10px;
+}
+.datapre,.mapdatapre{
+	width:100px; 
+	display: none;
+	height: 42px;
+	border:1px #d6d6d6 solid;
+	color: #9F99A2;
+	font-size: 14px;
+	text-align: center;
+	line-height: 42px;
+}
+.datapg,.datanext,.mapdatapg,.mapdatanext{
+	display: inline-block;
+	height: 42px;
+	border:1px #d6d6d6 solid;
+	color: #9F99A2;
+	font-size: 18px;
+	text-align: center;
+	line-height: 42px;
+}
+.datapg,.mapdatapg{
+	width: 42px;
+}
+
+.btmcntright{
+	width: 270px;
+	float: left;
+	margin-top: 62px;
+	margin-left: 40px;
+}
+.btmcntright h3{
+	width: 268px;
+	height: 40px;
+	border: 1px blue;
+	background: #F7F7F7;
+	text-align: center;
+	line-height: 40px;
+	border: 1px #E6E6E6 solid;
+}
+.sellerlist{
+	width: 268px;
+}
+.selleritem{
+	width: 268px;
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: content-box;
+	border: 1px #E6E6E6 solid;
+	border-top: none;
+}
+.listnum{
+	width: 56px;
+	color: #FC6621;
+	font-size: 26px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bolder;
+}
+.selleritemimg{
+	width: 50px;
+	border: 1px #E6E6E6 solid;
+}
+.selleritemimg img{
+	width: 50px;
+	height: 50px;
+}
+.selleritemcnt{
+	width: 150px;
+	line-height: 25px;
+	color: gray;
+	font-size: 13px;
+}
+.selleritemimg,.listnum,.selleritemcnt{
+	float: left;
+	height: 50px;
+	margin-left: 3px;
+}
+.selleritemcnt h4{
+	height: 25px;
+	color: #5BB8E9;
+}
+.foot{
+	width: 1368px;
+	height: 290px;
+	background: #FAFAFA;
+}
+.footnav{
+	width: 980px;
+	height: 114px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footitem{
+	width: 196px;
+	height: 114px;
+	float: left;
+}
+.footitem span{
+	display: block;
+	width: 43px;
+	height: 43px;
+	margin:0 6px 0 28px;
+	float: left;
+}
+.f-item-cnt{
+	width: 112px;
+	height: 114px;
+	float: left;
+} 
+.f-item-cnt h3{
+	padding-top: 10px;
+	color: #888888;
+}
+.f-item-cnt a{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	text-align: left;
+	font-size: 13px;
+	color: #888888;
+}
+.footbottom{
+	width: 1348px;
+	height: 94px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-size: 13px;
+	color: #888888;
+}
+.footbottom p{
+	height: 24px;
+	line-height: 24px;
+}
+.footbottom a,.footbottom span{
+	color: #888888;
+	margin: 0 10px;
+}
+.footbottom a:hover,.f-item-cnt a:hover{
+	text-decoration: underline;
+}
+/*模态窗口*/
+#motai{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.5);
+	display:none;
+}
+/*地图*/
+#mapcnt{
+	width: 70%;
+	height:90%;
+	border:1px black solid;
+	position: fixed;
+	top: 5%;
+	left: 15%;
+	z-index: 9999;
+	display: none;
+	background: white;
+ }
+ .maptitle{
+ 	display: inline-block;
+ 	width: 200px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	font-size: 13px;
+ 	color: #A0A0A0;
+	text-indent: 20px;
+ }
+ #mapcnt p{
+ 	background: url(../images/maptitlebg.png);
+ }
+ .mapclose{
+ 	display: block;
+ 	float: right;
+ 	width: 11px;
+ 	height: 10px;
+ 	padding-top: 20px;
+ 	background: url(../images/close.png) no-repeat 0 10px;
+ 	margin-right: 15px;
+ 	cursor: pointer;
+ }
+ #map{
+	width: 100%;
+	height:83%;
+ }
+
+ //地图info点击弹出框
+ .infocnt{
+ 	width: 300px;
+ 	height: 200px;
+ 	border:1px solid gray;
+ 	position: relative;
+ 	//z-index: 9999;
+ 	font-size: 13px;
+	display: none;
+ }
+#infocnt p{
+	width: 99%;
+	height: 50%;
+	line-height: 100%;
+	font-size: 13px;
+}
+#infocnt p:first-child{
+	background: gray;
+ }

@@ -1,0 +1,860 @@
+*{
+	margin:0;
+	padding:0;
+	
+	
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+#top{
+	width:100%;
+	height:32px;
+	border-bottom:1px solid #c7c7c7;
+	background:url("../images/liangpin/top-bg.png") repeat;
+}
+#top_container{
+	width:1200px;
+	margin:0 auto;
+}
+#top_left{
+	float:left;
+}
+#top_right{
+	float:right;
+}
+#top li{
+	float:left;
+}
+#top li a{
+	padding:0 13px 0 12px;
+	height:32px;
+	line-height: 32px;
+	color:#666;
+	font-size: 12px;
+	border-right: 1px solid #ddd;
+}
+#top li:last-child a{
+	border-right: none;
+}
+#top li a:hover{
+	text-decoration: underline;
+}
+
+#header{
+	background:white;
+}
+#header_container{
+	width:1200px;
+	margin:0 auto;
+}
+#header_container div{
+	display: inline-block;
+}
+#header_nav{
+	margin-left: 130px;
+}
+#header_list li{
+	float:left;
+	height:70px;
+	width:102px;
+}
+#header_list li a{
+	display:block;
+	width:64px;
+	height:40px;
+	line-height: 40px;
+	padding:0 18px;
+	color:#666;
+	font-size: 16px;
+	position: relative;
+	top:50%;
+	transform: translate(0,-50%);
+}
+#header_list li a:hover{
+	background:#F4F4F4;
+}
+
+#header_search{
+	margin-top: 15px;
+	font-size: 0;
+	float:right;
+}
+#search_text{
+	width:220px;
+	height:14px;
+	padding:12px 0;
+	border:1px solid #185;
+	margin:0;
+	float:left;
+}
+#search_btn{
+	width:40px;
+	height:40px;
+	border:1px solid #183;
+	background:url("../images/liangpin/header-search.png");
+	float:left;
+}
+
+#content{
+	background:#F5F5F5;
+	padding-top: 5px;
+}
+#content_contianer{
+	width:1200px;
+	margin:0 auto;
+}
+#content_top{
+	margin-bottom: 5px;
+}
+#content_top::after{
+	content:"";
+	clear:both;
+	display: block;
+}
+#content_nav{
+	float:left;
+	width:900px;
+	height:240px;
+	position: relative;
+	overflow: hidden;
+}
+#show_ul{
+	width:5000px;
+	position: absolute;
+	top:0;
+	left:0;
+	transition: left 0.5s;
+}
+#show_ul li{
+	width:900px;
+	float:left;
+}
+#show_ul li img{
+}
+#btn_ul{
+	position: absolute;
+	bottom:15px;
+	left:43%;
+	transition: transform 0.3s;
+}	
+#content_nav:hover #btn_ul{
+	transform: scale(1.1);
+}
+#btn_ul li{
+	float:left;
+	margin:0 5px;
+	width:12px;
+	height:12px;
+	border-radius: 50%;
+	background:rgba(0,0,0,0.7);
+	border:2px solid rgba(255,255,255,0.6);
+}
+#btn_ul .btn_hover{
+	background:rgba(255,255,255,0.7);
+	border:2px solid rgba(0,0,0,0.6);
+}
+#content_ad{
+	float:right;
+}
+
+
+#content_slide{
+	border:1px solid #aaa;
+}
+#slide_container{
+	height:148px;
+}
+#left_btn{
+	width:39px;
+	height:148px;
+	display: block;
+	float:left;
+	background-color: #FAFAFA;
+	position: relative;
+	cursor: pointer;
+}
+#right_btn{
+	width:39px;
+	height:148px;
+	display: block;
+	float:right;
+	background-color: #FAFAFA;
+	position: relative;
+	cursor: pointer;
+}
+#left_btn_img{
+	display: block;
+	position: absolute;
+	width:12px;
+	height:20px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background:url("../images/liangpin/slide-bg.png") no-repeat;
+	background-position: -24px 0;
+}
+#left_btn:hover #left_btn_img{
+	background-position: 0 0;
+}
+#right_btn_img{
+	display: block;
+	position: absolute;
+	width:12px;
+	height:20px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background:url("../images/liangpin/slide-bg.png") no-repeat;
+	background-position: -36px 0;
+
+}
+#right_btn:hover #right_btn_img{
+	background-position: -12px 0;
+}
+
+#slide_ul li{
+	float:left;
+	width:280px;
+	height:148px;
+	background:white;
+	margin-right:1px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+#slide_ul li:hover{
+	box-shadow: 0 0 15px #666;
+}
+.slide_img{
+	float:left;
+	margin:30px 0 0 10px;
+}
+.slide_img img{
+	width:100px;
+	height:100px;
+}
+.slide_info{
+	float:left;
+	padding-top: 10px;
+}
+.slide_info_title{
+	height:42px;
+	line-height: 42px;
+	color:#666;
+	font-weight: normal;
+}
+.slide_info_price_off{
+	height:18px;
+	line-height: 18px;
+	font-size: 12px;
+	color:#999;
+}
+.price_off{
+	display: inline-block;
+	width:34px;
+	height:16px;
+	padding-left: 7px;
+	color:white;
+	background:url("../images/liangpin/price-off.jpg");
+}
+.slide_info_price{
+	color:#FC6621;
+}
+.price_num{
+	height:36px;
+	line-height: 36px;
+	font-size: 30px;
+}
+.buyBtn{
+	width:102px;
+	height:36px;
+	line-height: 36px;
+	font-size: 16px;
+	color:white;
+	background:#FC6621;
+	text-align: center;
+	cursor: pointer;
+}
+.buyBtn:hover{
+	background:#FF7700;
+}
+
+#content_choose{
+	background:white;
+	border-top: 1px solid #ddd;
+}
+#content_choose::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.choose_base{
+	padding:15px 0 0 20px ;
+}
+.choose_base dt{
+	float:left;
+	width:80px;
+	height:30px;
+	line-height: 30px;
+	font-size: 18px;
+	color:#666;
+}
+.choose_base dd{
+	display: inline-block;
+	float:left;
+	width:1098px;
+}
+.choose_base dd a{
+	display: inline-block;
+	height:22px;
+	line-height: 22px;
+	padding:0 5px;
+	margin:4px;
+	font-size: 12px;
+}
+.choose_base dd a:first-child{
+	color:white;
+	background:#4DAF7C;
+}
+.choose_base dd a:hover{
+	color:white;
+	background:#4DAF7C;
+}
+#main_content{
+	margin-top: 10px;
+}
+#main_content::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+#main_left{
+	width:890px;
+	float:left;
+}
+#main_left_header{
+	width:890px;
+	height:40px;
+	border:1px solid #ddd;
+	background:white;
+}
+#default_sort,#price_sort{
+	display: inline-block;
+	padding:0 20px;
+	height:40px;
+	line-height: 40px;
+	border-right: 1px solid #ddd;
+	font-size: 12px;
+}
+#default_sort{
+	color:#185;
+}
+#only{
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10px;
+	font-size: 12px;
+	color:#2e74d3;
+}
+#only:hover{
+	text-decoration: underline;
+}
+#total_num{
+	display: inline-block;
+	float:right;
+	height:40px;
+	line-height: 40px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+#main_left_item_list{
+	margin-top: 10px;
+	width:890px;
+}
+.main_left_item{
+	float:left;
+	width:213px;
+	height:300px;
+	border:1px solid #fff;
+	margin:0 10px 10px 0;
+	position: relative;
+	background:white;
+}
+.main_left_item:nth-child(4n){
+	margin-right: 0;
+}
+.items_img{
+	display: block;
+	width:213px;
+	height:213px;
+	border:1px solid white;
+	position: relative;
+}
+.items_img img{
+	width:175px;
+	height:175px;
+	display: block;
+	margin:20px auto;
+
+}
+.item_desc{
+	width:193px;
+	padding:0 10px;
+	background:rgba(255,255,255,0.6);
+	height:48px;
+	position: absolute;
+	bottom:0;
+	font-size: 12px;
+}
+.price_cont{
+	color:#f50;
+	padding:0 10px;
+	position: relative;
+}
+.price_off_container{
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	top:5px;
+}
+.price_off_container div{
+	width:34px;
+	height:16px;
+	line-height: 16px;
+	font-size: 12px;
+	text-align: center;
+	padding-left: 7px;
+	color:white;
+	background:url("../images/liangpin/price-off.jpg");
+}
+.price_off_container del{
+	font-size: 12px;
+	color:#888;
+}
+.price_cont .buyBtn{
+	position: absolute;
+	right:10px;
+	top:5px;
+	display: none;
+}
+.main_left_item:hover{
+	box-shadow: 0 0 10px #aaa;
+}
+.main_left_item:hover .price_off_container{
+	display: none;
+}
+.main_left_item:hover .buyBtn{
+	display: block;
+}
+.item_foot{
+	position: absolute;
+	bottom:10px;
+	left:10px;
+	font-size: 12px;
+	color:#999;
+}
+
+#main_right{
+	width:300px;
+	height:800px;
+	background:#FAFAFA;
+	float:right;
+	
+}
+#main_right>div{
+	border:1px solid #ddd;
+	margin-bottom: 10px;
+}
+.main_right_head{
+	width:266px;
+	height:39px;
+	padding:0 16px;
+	line-height: 39px;
+	border-bottom: 1px solid #ddd;
+	margin:0 auto;
+	background:#FFFFFF;
+}
+.main_right_head_title{
+	float:left;
+	font-size: 16px;
+	color:#333;
+}
+.main_right_head_desc{
+	float:right;
+	font-size: 12px;
+	color:#aaa;
+}
+
+#wish_content{
+	padding:0 10px;
+}
+
+#wish_phone{
+	margin:10px 0;
+	height:74px;
+}
+#wish_phone dt{
+	height:74px;
+	line-height: 74px;
+	text-align: center;
+	width:60px;
+	float:left;
+	color:#888;
+	font-size: 12px;
+}
+#wish_phone dd{
+	float:left;
+	width:218px;
+}
+#wish_phone dd span{
+	display: inline-block;
+	float:left;
+	width:100px;
+	height:28px;
+	border:2px solid transparent;
+	text-align: center;
+	line-height: 28px;
+	font-size: 12px;
+	margin: 0 0 5px 5px;
+	background:#E8E8E8;
+	border-radius: 5px;
+}
+#wish_phone dd .wish_phone_selected{
+	background:#C9E7D7;
+	border:2px solid #4BB07B;
+}
+
+#wish_price{
+	margin:10px 0;
+	height:30px;
+}
+#wish_price dt{
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	width:60px;
+	float:left;
+	color:#888;
+	font-size: 12px;
+}
+#wish_price dd input{
+	width:80px;
+	height:16px;
+	padding:6px 4px;
+	border:1px solid #DDD;
+	margin-right: 3px;
+	margin-left: 5px;
+}
+#wish_price dd span{
+	font-size: 12px;
+	color:#888;
+}
+#wish_submit{
+	margin:10px auto;
+	width:56px;
+	height:19px;
+	padding:5px 20px;
+	background:#4FAF7C;
+	color:white;
+	cursor: pointer;
+	border-radius: 4px;
+}
+#wish_bottom{
+	margin: 10px auto;
+	height:18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color:#888;
+}
+
+
+#watch_content{
+	width:298px;
+	height:226px;
+	background:white;
+}
+
+
+#focus_content{
+	width:298px;
+	background:white;
+}
+#code_container{
+	width:280px;
+	margin:0 auto;
+	border-bottom: 1px dashed #888;
+	
+}
+#code_container::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+#code_img_box{
+	float:left;
+}
+#code_desc_box{
+	float:left;
+}
+#code_desc_box p:nth-child(1){
+	height:36px;
+	line-height: 36px;
+	color:#185;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+#code_desc_box p:nth-child(2){
+	height:24px;
+	line-height: 24px;
+	color:black;
+	font-size: 14px;
+	text-align: center;
+}
+
+#code_desc_box p:nth-child(3){
+	height:30px;
+	line-height: 30px;
+	color:#185;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 24px;
+	font-weight: bold;
+}
+
+#weibo_container{
+	height:34px;
+	width:280px;
+	margin:0 auto;
+	padding:5px 0;
+	border-bottom: 1px dashed #888
+}
+#weibo_container::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+#weibo_container img{
+	float:left;
+	margin:0 10px;
+}
+#weibo_container span{
+	float:left;	
+	line-height: 34px;
+}
+#weibo_container span:first-of-type{
+	font-size: 16px;
+}
+#weibo_container span:last-of-type{
+	font-size: 12px;
+	color:#888;
+	float:right;
+}
+
+#qq_container{
+	width:280px;
+	margin:0 auto;
+	padding:5px 0;
+}
+#qq_container::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+#qq_container img{
+	float:left;
+	margin:0 10px;
+}
+#qq_cont{
+	/*display: inline-block;*/
+	float:left;
+}
+#qq_cont p{
+	font-size: 16px;
+	line-height: 34px;
+}
+#qq_cont span{
+	display: block;
+	height:30px;
+	line-height: 30px;
+	color:#185;
+	font-size: 16px;
+}
+#focus_bottom{
+	width:238px;
+	margin:0 auto;
+	font-size: 14px;
+	color:#88C3AA;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+#list_content{
+	background:white;
+	width:298px;
+}
+#list_content ul li{
+	margin:0 auto;
+	width:258px;
+	height:70px;
+	padding:10px;
+	border-bottom: 1px dashed #888;
+} 
+#list_content ul li:last-child{
+	border-bottom: none;
+}
+#list_content ul li .list_img{
+	float:left;
+}
+#list_content ul li .list_detail{
+	float:left;
+	margin-right: 10px;
+}
+#list_content ul li .list_detail .list_detail_tel{
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+#list_content ul li .list_detail .list_detail_desc{
+	font-size: 12px;
+	color:#888;
+	line-height: 18px;
+}
+
+
+#footer{
+	background:#FAFAFA;
+	width:100%;
+}
+#footer_nav_container{
+	width:1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+#footer_nav_container::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+#footer_nav{
+	width:980px;
+	height:114px;
+	padding:20px 0;
+	float:left;
+	
+}
+
+#footer_nav ul li{
+	float:left;
+	width:196px;
+	height:114px;
+}
+#footer_nav ul li:last-child{
+	width:150px;
+}
+#footer_nav ul li span{
+	width:43px;
+	height:43px;
+	display: inline-block;
+	background:url("../images/index/sprite-3.jpg");
+	vertical-align: top;
+}
+#footer_nav ul li:nth-child(1) span{
+	background-position: 0 0;
+}
+#footer_nav ul li:nth-child(2) span{
+	background-position: 0 -44px;
+}
+#footer_nav ul li:nth-child(3) span{
+	background-position: 0 -88px;
+}
+#footer_nav ul li:nth-child(4) span{
+	background-position: 0 -132px;
+}
+#footer_nav ul li:nth-child(5) span{
+	background-position: 0 -176px;
+}
+.footer_nav_item{
+	display: inline-block;
+	color:#888;
+}
+.footer_nav_item dt{
+	font-size: 16px;
+	font-weight: bold;
+	height:36px;
+	line-height: 36px;
+}
+.footer_nav_item dd a{
+	height:26px;
+	line-height: 26px;
+	font-size: 12px;
+	color:#888;
+}
+.footer_nav_item dd a:hover{
+	text-decoration: underline;
+}
+
+#footer_contact{
+	float:right;
+	width:220px;
+	height:139px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+}
+#contact_tel{
+	color:#185;
+	font-size: 26px;
+	height:39px;
+	line-height: 39px;
+}
+#contact_time{
+	color:#999;
+	font-size: 16px;
+	height:24px;
+	line-height: 24px;
+}
+#contact_btn{
+	width:160px;
+	height:35px;
+	line-height: 35px;
+	margin: 10px auto;
+	background:#4AB07A;
+	color:white;
+	font-size: 18px;
+	border-radius:10px;
+}
+#contact_weixin{
+	font-size: 12px;
+	color:#999;
+}
+
+
+#footer_copyright{
+	padding-top: 22px;
+	padding-bottom: 50px;
+}
+#footer_copyright p{
+	text-align: center;
+	height:24px;
+	line-height: 24px;
+	color:#888;
+	font-size: 12px;
+}
+#footer_copyright p a{
+	color:#888;
+}
+#footer_copyright p a:hover{
+	text-decoration: underline;
+}
+
+

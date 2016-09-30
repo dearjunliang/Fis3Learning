@@ -1,0 +1,1 @@
+requirejs.config({baseUrl:"lib",paths:{jquery:"jquery",tool:"../app/myutil",backbone:"backbone",url:"../app/config",deldata:"../app/gedata",map:"../app/map"},shim:{tool:{exports:"lw"}}}),require(["router.js"],function(){Backbone.history.start()});

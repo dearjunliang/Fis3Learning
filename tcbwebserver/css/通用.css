@@ -1,0 +1,594 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #666;
+}
+#webHead
+{
+	height: 32px;
+	line-height: 32px;
+	background: url(../images/shouye/bg1.png)repeat-x;
+	display: block;
+}
+.add_info
+{
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	margin-left: 100px;
+	display: block;
+}
+.pop-city
+{
+	width: 460px;
+	height: 188px;
+	border: 1px solid #cfcfcf;
+	position: absolute;
+	top: 26px;
+	left: 120px;
+	font-size: 12px;
+	background: #fbfbfb;
+	z-index: 222;
+	display: none;
+}
+.cityList
+{
+	padding: 7px 0;
+	// border: 1px solid #cfcfcf;
+	// border-width: 0 1px;
+}
+.close
+{
+	width: 55px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: url(../images/shouye/close.png)no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+	background-position: 0 -7px;
+}
+.cities
+{
+	background: #fff;
+	margin: 5px 10px 0;
+	padding: 12px 12px 0;
+	border: 1px solid #e8e8e8;
+}
+.cities li
+{
+	margin-bottom: 10px;
+	padding-left: 40px;
+	vertical-align: top;
+	position: relative;
+}
+.cities h4
+{
+	position: absolute;
+	left: 0px;
+	color: #666;
+}
+.cities p
+{
+	line-height: 18px;
+}
+.cities p a
+{
+	height: 18px;
+	line-height: 18px;
+	display: inline-block;
+	margin:0 10px 2px 0;
+}
+.cities p a:hover
+{
+	color: #FF6600;
+	text-decoration: underline;
+}
+.add_info li
+{
+	display: inline-block;
+	font-size: 12px;
+}
+.register
+{
+	float: right;
+	margin-right: 83px;
+	display: block;
+}
+.register li
+{
+	display: inline-block;
+	font-size:12px;
+	line-height: 32px;
+
+}
+.register li a
+{
+
+	padding: 0 13px 0 12px;
+	border-right: 1px solid gray;
+
+}
+.register li .advice
+{
+	color: red;
+}
+.register li a:hover
+{
+	text-decoration: underline;
+}
+.register li span
+{
+	padding: 0 10px;
+	color: #666;
+	border-right: 1px solid gray;
+}
+.section
+{
+	clear: both;
+}
+.icon
+{
+	display: block;
+}
+.icon-inner
+{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.icon-left
+{
+	width: 890px;
+	float: left;
+	display: block;
+}
+.shop-list
+{
+	padding: 20px 0;
+	display: block;
+}
+.row
+{
+	clear: both;
+	zoom:1;
+	display: block;
+}
+.icon-left-fixed
+{
+	width: 300px;
+	float: left;
+}
+.area-select
+{
+	display: block;
+	position: relative;
+	height: 42px;
+
+}
+.areasel
+{
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	padding: 4px 7px 4px 13px;
+	border: 1px solid #185;
+	font-size: 14px;
+	color: black;
+	float: left;
+	margin-right: 8px;
+	position: relative;
+	z-index: 22;
+	cursor:pointer;
+}
+.icon-right-addr
+{
+	margin-left: 300px;
+	display: block;
+}
+.addr-search-box
+{
+	height: 40px;
+	border: 1px solid #185;
+	background: white;
+	display: block;
+	margin: 0;
+}
+.addr-search-box form
+{
+	width: 100%;
+}
+.addr-ipt
+{
+	width: 449px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	float: left;
+	padding: 10px 5px 10px 14px;
+	border: 0;
+}
+.addr-btn
+{
+	background: #185;
+	width: 120px;
+	height: 40px;
+	float: left;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	cursor:pointer;
+	border: 0;
+}
+.shop-list-wrap
+{
+	clear: both;
+	display: block;
+
+}
+.shop-list-filter:after
+{
+	border:1px solid #d6d6d6;
+	clear:both;
+	display: block;
+	zoom:1;
+}
+.sort-type li
+{
+	width: 120px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	float: left;
+	font-size: 14px;
+}
+.filter-check
+{
+	width: 260px;
+	height: 42px;
+	line-height: 42px;
+	text-align: left;
+	display: block;
+	float: left;
+	font-size: 14px;
+	color: #666;
+}
+.extra
+{
+	float: right;
+	display: block;
+	margin:6px 10px 0 0;
+}
+.mode-map
+{
+	background: url(../images/shouye/map.png)no-repeat 10px 0;
+	font-size: 14px;
+	width: auto;
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	border: 1px solid #dbdbdb;
+	padding-left: 35px;
+	padding-right: 10px;
+}
+.shopList
+{
+	clear: both;
+	display: block;
+}
+.listItem
+{
+	height: 92px;
+	line-height: 31px;
+	padding: 20px 0;
+	position: relative;
+	border: 0;
+	border-bottom: 1px solid #dfdfe1;
+}
+.listItem:hover
+{
+	background: #FAFAFA;
+}
+.shopPic
+{
+	border: 1px solid #e6e6e6;
+	margin-right:10px;	 
+	float: left;
+}
+.shopPic img
+{
+	width: 90px;
+	height: 90px;
+}
+.cont
+{
+	margin-left: 102px;
+}
+.shopname
+{
+	color: #185;
+	font-size: 14px;
+}
+.shop-grade
+{
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 14px;
+}
+.desc,.addr
+{
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	font-size: 13px;
+	color: #666;
+}
+.shop-score
+{
+	width: 160px;
+	position: absolute;
+	right: 180px;
+	text-align: left;
+	top:22px;
+	display: block;
+	font-size: 13px;
+	color: #666;
+}
+.ion,.ion1
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 4px;
+	overflow: hidden;
+	font-size: 13px;
+	color: #666;
+}
+.ion
+{
+	background: url(../images/shouye/pf.png)
+}
+.ion1
+{
+	background: url(../images/shouye/rz.png)
+}
+.shop-pagination
+{
+	padding: 5px 0;
+	text-align: center;
+}
+.shop-pagination a
+{
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px solid #d6d6d6;
+	background: white;
+	margin-left: 3px;
+	display: inline-block;
+	color: #999;
+	font-weight: bold;
+}
+.icon-right
+{
+	width: 265px;
+	// height: 400px;
+	border: 1px solid gray;
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.tits
+{
+	background: #f7f7f7;
+	height: 42px;
+	line-height: 42px;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
+.cont-list-item
+{
+	height: 52px;
+	border-top: 1px solid #e6e6e6;
+	color: #666;
+	padding: 20px 0;
+}
+.s-num
+{
+	width: 56px;
+	height: 52px;
+	font-size: 26px;
+	color: #666;
+	float: left;
+	text-align: center;
+}
+.haoping-pic
+{
+	border: 1px solid #e6e6e6;
+	float: left;
+}
+.haoping-pic img
+{
+	width: 50px;
+	height: 50px;
+}
+.conts
+{	
+	width: 150px;
+	float: left;
+	overflow: hidden;
+}
+.conts span
+{
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 4px;
+	overflow: hidden;
+}
+.conts span a
+{
+	font-size: 13px;
+	color: #185;
+}
+.conts p
+{
+	font-size: 14px;
+	color: #666;
+}
+.s-num-red
+{
+	color: #FC6621;
+}
+.doc-ft
+{
+	clear: both;
+	background: #fafafa;
+	border-top: 1px solid #e5e5e5;
+	padding-bottom: 40px;
+	text-align: center;
+	background: #494E51;
+}
+.foot-nav
+{
+	width: 980px;
+	font-family: "微软雅黑 宋体";
+	padding: 20px 0;
+	// border-bottom: 1px solid #EEEEEE;
+	margin:0 auto;
+	display: block;
+	vertical-align: middle;
+	background: #494E51;
+}
+.buy
+{
+	width: 20%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin-left: -10px;
+	color: white;
+}
+.shops,.shops1,.shops2,.shops3,.shops4
+{
+	float: left;
+	width: 43px;
+	height: 43px;
+	display: inline-block;
+	background: url(../images/shouye/buy.gif)no-repeat;
+	// margin-left: 28px;
+	// margin-right: 6px;
+}
+.shops1
+{
+	background-position: 0 -44px;
+}
+.shops2
+{
+	background-position: 0 -88px;
+}
+.shops3
+{
+	background-position: 0 -132px;
+}
+.shops4
+{
+	background-position: 0 -176px;
+}
+.foots
+{
+	width: 112px;
+	display: inline-block;
+	vertical-align: top;
+}
+.foots li
+{
+	width: 112px;
+	vertical-align: top;
+
+}
+
+.foots a
+{
+	line-height: 26px;
+	display: block;
+	font-size: 12px;
+	color: white;
+}
+.foots li:first-child
+{
+	height: 36px;
+	line-height: 36px;
+	font-weight: bolder;
+	font-size: 16px;
+}
+.foots a:hover
+{
+	text-decoration: underline;
+}
+.jiameng
+{
+	color: #239BF8;
+}
+.link
+{
+	padding-top: 22px;
+	line-height: 24px;
+}
+.copy-right-info
+{
+	background: #242C31;
+	padding: 12px 0 60px;
+}
+.copy-right-info p
+{
+	font-size: 12px;
+	color: #666;
+}
+.link a
+{
+	margin: 0 12px;
+	color: white;
+}
+.link1 a
+{
+	color: white;
+}
+.fix
+{
+	position: fixed;
+	top: 0;
+	z-index: 2222;
+	width: 100%;
+}
+.fixed
+{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+.fixImg
+{
+	width: 71px;
+	height: 165px;
+	position: absolute;
+	right: -72px;
+	top: 300px;
+	background: url(../images/shouye/fixed.png)-78px 0;
+}

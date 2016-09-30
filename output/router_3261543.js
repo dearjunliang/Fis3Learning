@@ -1,0 +1,1 @@
+define(["backbone","url","app/shops.js","jquery","deldata","map"],function(e,a,t,n,o){var p=Backbone.Router.extend({routes:{help:"help","getshopdata/:m/:count":"getdata"},getdata:function(e,n){var p=a.shopsUrl+"/"+e+"/pagecount/"+n;t.listShop(p,o.deldata)}});return new p});
